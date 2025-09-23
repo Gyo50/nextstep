@@ -22,6 +22,7 @@ iPad, iPhone, Watch, Mac, 고객지원 페이지를 구현하여 HTML/CSS/JS을 
 - `feature/iphone` → iPhone 페이지
 - `feature/watch` → Watch 페이지
 - `feature/mac` → Mac 페이지
+- `feature/airpods` → Airpods 페이지
 - `feature/support` → 고객지원 페이지
 
 ---
