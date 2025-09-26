@@ -7,7 +7,7 @@ iPad, iPhone, Watch, Mac, Airpods, 고객지원 페이지를 구현하여 HTML/C
 
 ## 👥 팀원 구성
 - 팀장: 오영교 (@Gyo50)
-- 팀원: 요한() , 정소은() , 황서영() , 김현진()
+- 팀원: 요한(@ghddygks45) , 정소은(@wjdthdms) , 황서영(@hsyo830) , 김현진(@BZzzzi)
 
 ---
 
