@@ -39,5 +39,11 @@ iPad, iPhone, Watch, Mac, Airpods, 고객지원 페이지를 구현하여 HTML/C
 
 ---
 
+## 📟 [Figma](https://www.figma.com/design/hVhIJGYdgf2PfjIExLUH1L/nextstepfigma?node-id=10-19&t=L0xUJu8lcZM6cB87-1)
+- 공통 작업 figma
+  - 헤더/네비게이션
+  - 푸터
+  - 공통 스타일
+
 ## 🚀 실행 방법
 
