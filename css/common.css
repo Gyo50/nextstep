@@ -1,0 +1,20 @@
+:root {
+    /*header color*/
+    --header-bg-color: #ffffff;
+    --header-border-color: rgba(0, 0, 0, 0.16);
+    --header-text-color: rgba(0, 0, 0, 0.8);
+
+    /*footer color*/
+    --footer-bg-color: #f5f5f7;
+    --footer-border-color: rgba(0, 0, 0, 0.16);
+    --footer-text-color: rgba(0, 0, 0, 0.56);
+
+    /*link color*/
+    --link-color: #0066cc;
+
+    /*diagram color*/
+    --diagram-color:rgba(0, 0, 0, 0.48);
+    --diagram-text-color: :rgba(0, 0, 0, 0.72);
+    
+    
+}
