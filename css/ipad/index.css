@@ -1,37 +1,58 @@
-.wrapper {
-  max-width: 1024px;
-  padding: 0 22px;
-  margin: 0 auto;
-}
+/*
+
+    사이트 헤더
+
+*/
 
 .site-header {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--header-bg-color);
+  margin: 0 auto 50px;
 }
 
-.site-header .wrapper {
-  height: 50px;
+.site-header a {
+  color: var(--header-text-color);
+  font-size: 12px;
+}
+
+.main-header {
+  width: 100%;
+  height: 44px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.site-header .wrapper.interaction-header {
+.interaction-header {
+  width: 100%;
   height: 65px;
+  display: none;
   justify-content: center;
+  align-items: center;
   gap: 25px;
   padding: 24px 0;
 }
 
-.site-header .wrapper.interaction-header a {
+.interaction-header.show {
+  display: flex;
+}
+
+.interaction-header a {
   font-weight: 500;
 }
 
-.site-header .wrapper.sub-header {
-  height: 132px;
+.site-header .sub-header {
+  height: 100px;
+  display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
   padding: 16px 0;
+  margin: 0 34px;
 }
 
 .site-header .sub-header .content {
@@ -42,15 +63,78 @@
   gap: 4px;
 }
 
-.site-header a {
-  color: var(--header-text-color);
-  font-size: 12px;
-}
-
 .site-footer {
   background-color: var(--footer-bg-color);
 }
 
 .site-footer a {
   color: var(--footer-text-color);
+}
+
+/* 
+
+    사이트 메인 
+
+*/
+
+.main-section-01-ipad {
+  margin: 0 5vw;
+}
+
+.main-section-01-ipad .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.main-section-01-ipad .content h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.main-section-01-ipad .content p {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.main-section-01-ipad .video-parent {
+  position: relative;
+}
+
+.main-section-01-ipad video {
+  max-width: 90vw;
+  display: block;
+  border-radius: 40px;
+}
+
+.main-section-01-ipad .play-bt-absolute {
+  height: 100%;
+  position: absolute;
+  top: -7%;
+  right: 5%;
+}
+.main-section-01-ipad .play-bt-bg {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 93%;
+  right: 5%;
+  border-radius: 9999px;
+  background-color: rgb(232, 232, 237);
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.main-section-01-ipad .play-bt-bg img {
+  width: 50%;
+  opacity: 50%;
+}
+
+.play-bt-bg.hide {
+  opacity: 0;
+  pointer-events: none;
 }
