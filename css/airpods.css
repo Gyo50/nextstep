@@ -1,0 +1,42 @@
+
+.header-inner{
+    max-width: 924px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
+    gap: 25px;
+
+}
+
+.header-inner .logo a,
+.header-inner .header-right a
+{
+    display: block;
+    height: 30px;
+}
+
+
+.header-inner .gnb ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.gnb ul li a{
+    color: var(--header-text-color);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 19px 20px;
+    transition: color 0.3s;
+    text-decoration: none;
+    display: block;
+}
+
+.header-inner .header-right ul{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
