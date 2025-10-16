@@ -1,8 +1,13 @@
 // 사이트 인터렉션 헤더 toggle
 const ipadMenu = document.querySelector("#ipad-menu");
-const ipadInteractionMenu = document.querySelector("#ipad-interaction-menu");
+const ipadInteractionMenu = document.querySelector(".ipad-interaction-menu");
 
-ipadMenu.addEventListener("click", (e) => {
+ipadMenu.addEventListener("mouseover", (e) => {
+  e.preventDefault();
+  ipadInteractionMenu.classList.add("show");
+});
+
+ipadInteractionMenu.addEventListener("mouseout", (e) => {
   e.preventDefault();
   ipadInteractionMenu.classList.toggle("show");
 });
