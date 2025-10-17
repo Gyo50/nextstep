@@ -16,13 +16,25 @@
   <body>
     <!-- 사이트 헤더 -->
     <header class="site-header">
-      <ul class="main-header">
+      <ul class="main-header menu">
         <a href="/">
           <li><img src="./img/common/logo-icon.svg" alt="애플 로고" /></li>
         </a>
-        <a href="/"><li>Mac</li></a>
-        <a href="/" class="ipad-menu"><li>iPad</li></a>
-        <a href="/" class="iphone-menu"><li>iPhone</li></a>
+        <a href="/" id="imac"><li>Mac</li></a>
+        <div>
+          <a href="/" id="ipad"><li>iPad</li></a>
+          <!-- 아이패드 메뉴바-->
+          <ul class="ipad-interaction-header">
+            <a href="#section-01"><li>iPad</li></a>
+            <a href="#"><li>알면 알수록, iPad.</li></a>
+            <a href="#"><li>라인업 살펴보기.</li></a>
+            <a href="#section-04"><li>iPad와 천생연분.</li></a>
+            <a href="#"><li>iPad, Apple에서 사면 가장 좋은 이유.</li></a>
+            <a href="#"><li>절친 목록.</li></a>
+          </ul>
+          <!-- *** -->
+        </div>
+        <a href="/"><li>iPhone</li></a>
         <a href="/"><li>Watch</li></a>
         <a href="/"><li>AirPods</li></a>
         <a href="/"><li>고객지원</li></a>
@@ -34,67 +46,56 @@
         </a>
       </ul>
 
-      <!-- 헤더 메뉴바-->
-      <ul class="ipad-interaction-menu">
-        <a href="#"><li>iPad</li></a>
-        <a href="#"><li>알면 알수록, iPad.</li></a>
-        <a href="#"><li>라인업 살펴보기.</li></a>
-        <a href="#"><li>iPad와 천생연분.</li></a>
-        <a href="#"><li>iPad, Apple에서 사면 가장 좋은 이유.</li></a>
-        <a href="#"><li>절친 목록.</li></a>
-      </ul>
-      <!-- *** -->
-
       <div class="sub-header">
-        <a href="/" class="content">
+        <a href="/">
           <img src="./img/sub-header/ipad-L-icon.svg" alt="아이패드 프로" />
           <p>iPad Pro</p>
         </a>
-        <a href="/" class="content">
+        <a href="/">
           <img src="./img/sub-header/ipad-L-icon.svg" alt="아이패드 에어" />
           <p>iPad Air</p>
         </a>
-        <a href="/" class="content">
+        <a href="/">
           <img src="./img/sub-header/ipad-M-icon.svg" alt="아이패드 에어" />
           <p>iPad</p>
         </a>
-        <a href="/" class="content">
+        <a href="/">
           <img src="./img/sub-header/ipad-S-icon.svg" alt="아이패드" />
           <p>iPad mini</p>
         </a>
-        <a href="/" class="content">
+        <a href="/">
           <img
             src="./img/sub-header/ipad-compare-icon.svg"
             alt="아이패드 비교하기"
           />
           <p>비교하기</p>
         </a>
-        <a href="/" class="content">
+        <a href="/">
           <img
             src="./img/sub-header/ipad-apple-pencil-icon.svg"
             alt="아이패드 애플펜슬"
           />
           <p>Apple Pencil</p>
         </a>
-        <a href="/" class="content">
+        <a href="/">
           <img
             src="./img/sub-header/ipad-keyboard-icon.svg"
             alt="아이패드 키보드"
           />
           <p>키보드</p>
         </a>
-        <a href="/" class="content">
+        <a href="/">
           <img
             src="./img/sub-header/ipad-accessories-icon.svg"
             alt="아이패드 액세서리"
           />
           <p>엑세서리</p>
         </a>
-        <a href="/" class="content">
+        <a href="/">
           <img src="./img/sub-header/ipados-icon.svg" alt="아이패드OS 26" />
           <p>iPadOS 26</p>
         </a>
-        <a href="/" class="content">
+        <a href="/">
           <img
             src="./img/sub-header/ipad-shop-icon.svg"
             alt="아이패드 쇼핑하기"
@@ -107,8 +108,9 @@
     <!-- 사이트 메인 -->
 
     <main class="site-main">
-      <section class="main-section-01-ipad">
-        <div class="content">
+      <!-- section-01 -->
+      <section class="main-section-01">
+        <div id="section-01" class="title">
           <h1>iPad</h1>
           <p>
             터치, 그리기, 타이핑 모두가<br />
@@ -123,7 +125,36 @@
             </div>
           </div>
         </div>
+
+        <div class="play-bt-bg">
+          <img src="./img/main/section-02/slide-01.webp" alt="동영상 플레이" />
+        </div>
       </section>
+      <!-- *** -->
+
+      <!-- section-04 -->
+      <section class="main-section-04">
+        <div id="section-04" class="title">
+          <h1>iPad와 천생연분.</h1>
+          <p>
+            터치, 그리기, 타이핑 모두가<br />
+            되는 놀라운 하나의 기기.
+          </p>
+        </div>
+        <div class="video-parent">
+          <video src="/video/iPad.mp4"></video>
+          <div class="play-bt-absolute">
+            <div class="play-bt-bg">
+              <img src="./img/common/play-button.svg" alt="동영상 플레이" />
+            </div>
+          </div>
+        </div>
+
+        <div class="play-bt-bg">
+          <img src="./img/main/section-02/slide-01.webp" alt="동영상 플레이" />
+        </div>
+      </section>
+      <!-- *** -->
     </main>
 
     <!-- 사이트 풋터 -->

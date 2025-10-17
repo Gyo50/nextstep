@@ -1,27 +1,21 @@
 // 사이트 헤더 메뉴바 인터렉션
-const ipadMenu = document.querySelector(".ipad-menu");
-const ipadInteractionMenu = document.querySelector(".ipad-interaction-menu");
+const menu = document.querySelector(".menu");
+const ipadInteractionHeader = document.querySelector(
+  ".ipad-interaction-header"
+);
 
-ipadMenu.addEventListener("mouseenter", (e) => {
+menu.addEventListener("mouseenter", (e) => {
   e.preventDefault();
-  ipadInteractionMenu.classList.add("show");
+  ipadInteractionHeader.classList.add("show");
 });
 
-ipadInteractionMenu.addEventListener("mouseenter", (e) => {
+ipadInteractionHeader.addEventListener("mouseenter", (e) => {
   e.preventDefault();
-  ipadInteractionMenu.classList.add("show");
+  ipadInteractionHeader.classList.add("show");
 });
 
-ipadMenu.addEventListener("mouseleave", () => {
-  setTimeout(() => {
-    if (!ipadInteractionMenu.matches(":hover")) {
-      ipadInteractionMenu.classList.remove("show");
-    }
-  }, 100);
-});
-
-ipadInteractionMenu.addEventListener("mouseleave", () => {
-  ipadInteractionMenu.classList.remove("show");
+menu.addEventListener("mouseleave", () => {
+  ipadInteractionHeader.classList.remove("show");
 });
 
 // 메인 섹션1 동영상 플레이
