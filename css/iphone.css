@@ -8,24 +8,27 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 7px 0;
+  gap: 25px;
 }
-.nav-logo {
-  margin-right: 52px;
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 .nav-menu a {
+  padding: 16.5px 18px;
   text-decoration: none;
-  margin-right: 77px;
   color: var(--header-text-color);
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
 }
-.nav-menu a:last-child {
-  margin-right: 43px;
-}
-.nav-icon a {
-  margin-right: 25px;
+.nav-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
 /* footer */
