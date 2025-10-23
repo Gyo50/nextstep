@@ -69,19 +69,23 @@ footer {
   font-weight: 600;
   padding-bottom: 30px;
 }
-.support-client-list {
+.support-color {
   color: var(--footer-text-color);
   font-size: 12px;
   font-weight: 400;
+}
+.support-client-list {
   padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 .support-client-list a {
   text-decoration: none;
   color: var(--footer-text-color);
-  margin-right: 30px;
 }
-.support-client-list:last-child {
-  padding-bottom: 0;
+.support-client-help a {
+  color: var(--link-color);
 }
 .footer-copy {
   width: 100%;
