@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/common.css" />
-    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="ui.js"></script>
     <title>nextstep</title>
   </head>
 
   <body>
     <div id="wrap">
-      <header>
-        <div class="header_box">
+      <header id="header">
+        <div class="header_box" id="headerBox">
           <h2 class="logo_box">
-            <a href="#;">로고</a>
+            <a href="#;"><span class="blind">로고</span></a>
           </h2>
           <nav class="gnb">
-            <div class="gnb_box">
+            <div class="gnb_box" id="navigationBox">
               <ul class="gnb_list">
                 <li>
                   <a href="#;">Mac</a>
@@ -31,7 +34,6 @@
                     <li><a href="#;">Mac과 천생연분</a></li>
                   </ul>
                 </li>
-                <li><a href="#;">ipad</a></li>
                 <li><a href="#;">iphone</a></li>
                 <li><a href="#;">watch</a></li>
                 <li><a href="#;">Airpods</a></li>
@@ -40,18 +42,45 @@
             </div>
           </nav>
           <div class="util_box">
-            <a href="#;" class="search">search</a>
-            <a href="#;" class="itembox">itembox</a>
-            <a href="#;" class="menu">menu</a>
+            <a href="#;" class="search"><span class="blind">검색하기</span></a>
+            <a href="#;" class="itembox"><span class="blind">장바구니 가기</span></a>
+            <button type="button" class="menu" id="menuButton"><span class="blind">네비게이션 메뉴 열기</span></button>
           </div>
         </div>
       </header>
+      <div id="quickMenuBar">
+        <div class="swiper" id="swiper">
+          <div class="swiper-wrapper">
+            <a href="#;" class="swiper-slide">MacBook Air</a>
+            <a href="#;" class="swiper-slide">MacBook Pro</a>
+            <a href="#;" class="swiper-slide">iMac</a>
+            <a href="#;" class="swiper-slide">Mac mini</a>
+            <a href="#;" class="swiper-slide">Mac Studio</a>
+            <a href="#;" class="swiper-slide">Mac Pro</a>
+            <a href="#;" class="swiper-slide">비교하기</a>
+            <a href="#;" class="swiper-slide">디스플레이</a>
+            <a href="#;" class="swiper-slide">엑세서리</a>
+            <a href="#;" class="swiper-slide">Tahoe</a>
+            <a href="#;" class="swiper-slide">Mac 쇼핑하기</a>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="quick_shopping">
+        교육 할인가로 Mac 구입하기
+        <a href="#;">쇼핑하기</a>
+      </div>
+
+      <div id="content">컨텐츠영역</div>
+
       <footer>
         <div class="footer_box">
           <ul class="location">
-            <li><a href="#;">home</a></li>
-            <li>두번째</li>
-            <li>세번째</li>
+            <li>
+              <a href="#;"><span class="blind">홈으로 이동</span></a>
+            </li>
+            <li>Apple Store 온라인</li>
           </ul>
           <div class="footer_gnb">
             <ul class="nav_list">
@@ -65,11 +94,12 @@
           </div>
           <p class="comment">
             다양한 쇼핑 방법 :
-            <span class="color_link">Apple Store</span>
+            <a href="#;" class="color_link">Apple Store</a>
             를 방문하거나,
-            <span class="color_link">리셀러</span>
+            <a href="#;" class="color_link">리셀러</a>
             를 찾아보거나,
-            <span class="color_link">080-330-8877</span>
+            <a href="#;" class="color_link">080-330-8877</a>
+            번으로 전화하세요.
           </p>
           <div class="footer_infomation">
             <p class="copyright">Copyright © 2025 Apple Inc. 모든 권리 보유.</p>

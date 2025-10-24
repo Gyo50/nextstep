@@ -1,0 +1,9 @@
+:root{
+  --font-color-base:#1d1d1f;
+  --font-color-footer:#0000008f;
+}
+
+.color_link{
+  color: var(--link-color);
+  text-decoration:underline;
+}
