@@ -14,7 +14,25 @@
 
     /*diagram color*/
     --diagram-color:rgba(0, 0, 0, 0.48);
-    --diagram-text-color: :rgba(0, 0, 0, 0.72);
-    
-    
+    --diagram-text-color: :rgba(0, 0, 0, 0.72);   
+}
+
+
+
+
+
+
+body{
+    font-size:13px;
+    transition:all 0.3s;
+    color:#1d1d1f;
+    line-height:normal;
+}
+
+
+/* 데스크탑 영역 */
+@media screen and (min-width:833px){
+    body{
+        font-size:16px;
+    }
 }
