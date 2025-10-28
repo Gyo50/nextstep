@@ -31,10 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   mediaQuery.addEventListener("change", handleDeviceChange);
 
-  function mouseOverHandler() {
-    navigationSubListShow();
+  function mouseOverHandler(item) {
+    const target = item.currentTarget;
+    navigationSubListShow(target);
     const headerGnbBgElement = makeHeaderBg();
-    setNavigationHeight(headerGnbBgElement);
+    setNavigationHeight(headerGnbBgElement, target);
     makeNavigationFilter();
   }
 
@@ -50,12 +51,19 @@ document.addEventListener("DOMContentLoaded", () => {
     navigationBox.classList.toggle("open");
   }
 
-  function navigationSubListShow() {
+  function navigationSubListShow(target) {
     header.classList.add("show");
+    navItems.forEach((item) => {
+      item.classList.remove("open");
+    });
+    target.classList.add("open");
   }
 
   function navigationSubListHide() {
     header.classList.remove("show");
+    navItems.forEach((item) => {
+      item.classList.remove("open");
+    });
   }
 
   const headerBgStyleOption = {
@@ -66,33 +74,34 @@ document.addEventListener("DOMContentLoaded", () => {
       transition: "height 0.4s ease, opacity 0.4s ease",
     },
     activeStyle: {
-      height: () => {
-        const subGnb = document.querySelector(".gnb_sub_list");
+      height: (target) => {
+        const subGnb = target.nextElementSibling;
         return subGnb ? `${subGnb.offsetHeight}px` : "0px";
       },
       opacity: 1,
     },
   };
 
-  function setNavigationHeight(headerGnbBgElement) {
+  function setNavigationHeight(headerGnbBgElement, target) {
     requestAnimationFrame(() => {
-      headerGnbBgElement.style.height = headerBgStyleOption.activeStyle.height();
+      headerGnbBgElement.style.height = headerBgStyleOption.activeStyle.height(target);
       headerGnbBgElement.style.opacity = headerBgStyleOption.activeStyle.opacity;
     });
   }
 
   function makeHeaderBg() {
-    const headerGnbBg = document.querySelector(".headerGnbBgElement");
-    if (!headerGnbBg) {
-      const headerGnbBgElement = document.createElement("div");
-      headerGnbBgElement.className = headerBgStyleOption.className;
-      headerGnbBgElement.style.height = headerBgStyleOption.initialStyle.height;
-      headerGnbBgElement.style.opacity = headerBgStyleOption.initialStyle.opacity;
-      headerGnbBgElement.style.transition = headerBgStyleOption.initialStyle.transition;
-      headerBox.appendChild(headerGnbBgElement);
+    const existingBg = document.querySelector(".headerGnbBgElement");
+    if (existingBg) return existingBg;
 
-      return headerGnbBgElement;
-    }
+    const headerGnbBgElement = document.createElement("div");
+    headerGnbBgElement.className = headerBgStyleOption.className;
+    headerGnbBgElement.style.height = headerBgStyleOption.initialStyle.height;
+    headerGnbBgElement.style.opacity = headerBgStyleOption.initialStyle.opacity;
+    headerGnbBgElement.style.transition = headerBgStyleOption.initialStyle.transition;
+
+    headerBox.appendChild(headerGnbBgElement);
+
+    return headerGnbBgElement;
   }
 
   function removeHeaderBg() {

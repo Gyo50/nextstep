@@ -492,46 +492,56 @@ footer a{
     justify-content: space-around;
     transition: height 0.1s cubic-bezier(.17,.67,.87,.62);
   }
-
-
-
   .gnb .gnb_box .gnb_sub_list a{
     opacity:0;
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     pointer-events: none;
   }
   
   #header.show{
     z-index:1000;
   }
-  #header.show .gnb_sub_list{
+
+  #header .gnb_list>li>a.open + .gnb_sub_list{
     height:auto;
   }
 
-  #header.show .gnb_sub_list a{
+  #header .gnb_list>li>a.open + .gnb_sub_list a{
     opacity:1;
     transform: translateY(0);
     pointer-events: auto;
     transition: opacity 0.2s ease, transform 0.2s ease;
   }
 
-  #header.show .gnb_sub_list>li:nth-child(1)>a{
-    transition-delay: 0.2s;
+  #header .gnb_list>li>a.open + .gnb_sub_list>li:nth-child(1)>a{
+    transition-delay: 0.1s;
   }
-  #header.show .gnb_sub_list>li:nth-child(2)>a{
-    transition-delay: 0.25s;
+  #header .gnb_list>li>a.open + .gnb_sub_list>li:nth-child(2)>a{
+    transition-delay: 0.12s;
   }
-  #header.show .gnb_sub_list>li:nth-child(3)>a{
-    transition-delay: 0.30s;
+  #header .gnb_list>li>a.open + .gnb_sub_list>li:nth-child(3)>a{
+    transition-delay: 0.14s;
   }
-  #header.show .gnb_sub_list>li:nth-child(4)>a{
-    transition-delay: 0.35s;
+  #header .gnb_list>li>a.open + .gnb_sub_list>li:nth-child(4)>a{
+    transition-delay: 0.16s;
   }
-  #header.show .gnb_sub_list>li:nth-child(5)>a{
-    transition-delay: 0.40s;
+  #header .gnb_list>li>a.open + .gnb_sub_list>li:nth-child(5)>a{
+    transition-delay: 0.18s;
   }
-  #header.show .gnb_sub_list>li:nth-child(6)>a{
-    transition-delay: 0.45s;
+  #header .gnb_list>li>a.open + .gnb_sub_list>li:nth-child(6)>a{
+    transition-delay: 0.20s;
+  }
+  #header .gnb_list>li>a.open + .gnb_sub_list>li:nth-child(7)>a{
+    transition-delay: 0.22s;
+  }
+  #header .gnb_list>li>a.open + .gnb_sub_list>li:nth-child(8)>a{
+    transition-delay: 0.24s;
+  }
+  #header .gnb_list>li>a.open + .gnb_sub_list>li:nth-child(9)>a{
+    transition-delay: 0.26s;
+  }
+  #header .gnb_list>li>a.open + .gnb_sub_list>li:nth-child(10)>a{
+    transition-delay: 0.28s;
   }
   
   #header{
