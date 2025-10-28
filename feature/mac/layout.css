@@ -420,12 +420,6 @@ footer a{
   text-decoration: underline;
 }
 
-#content{
-    position:relative;
-    height:300px;
-    background:green;
-  }
-
 
 @media screen and (min-width:834px){
   body{

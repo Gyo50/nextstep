@@ -1,0 +1,51 @@
+@import 'reset.css';
+@import 'common.css';
+
+#content{
+  position:relative;
+}
+
+#content>section{
+  margin:0 40px;
+}
+
+#content>section:not(:last-child){
+  margin-bottom:100px;
+}
+
+section>.title{
+  margin-bottom:45px;
+  font-size:48px;
+  font-weight:600; 
+}
+
+.product_menu_box{}
+.product_menu_box .product_menu{
+  position:relative;
+  display:inline-flex;
+  padding:4px 0;
+  border-radius:44px;
+  background:#E8E8ED;
+  
+}
+.product_menu_box .product_menu>button{
+  position:relative;
+  height:36px;
+  padding:0 20px;
+  z-index:10;
+  transition:0.3s ease 0.1s;
+}
+.product_menu_box .product_menu .active_button_box{
+  position:absolute;
+  left:0;
+  display:inline-block;
+  height:36px;
+  width:84px;
+  border-radius:36px;
+  background:#000;
+  transition: transform 0.3s ease;
+  transform:translateX(4px);
+}
+.product_menu_box .product_menu>button.active{
+  color:#fff;
+}

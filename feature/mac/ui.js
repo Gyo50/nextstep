@@ -137,4 +137,25 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   }
+
+  const ProductMnueButtons = document.querySelectorAll(".product_menu >button");
+  const ProductMnueActiveBox = document.querySelector(".active_button_box");
+
+  ProductMnueButtons.forEach((button) => {
+    button.addEventListener("click", productMenuActive);
+  });
+
+  function productMenuActive(item) {
+    const button = item.currentTarget;
+    const ACTIVE_BOX_MARGIN = 4;
+
+    document.querySelector(".product_menu button.active")?.classList.remove("active");
+    button.classList.add("active");
+
+    const buttonWidth = button.offsetWidth - ACTIVE_BOX_MARGIN * 2;
+    const buttonLeft = button.offsetLeft + ACTIVE_BOX_MARGIN;
+
+    ProductMnueActiveBox.style.width = `${buttonWidth}px`;
+    ProductMnueActiveBox.style.transform = `translateX(${buttonLeft}px)`;
+  }
 });
