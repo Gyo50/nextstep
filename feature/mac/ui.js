@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("#header");
   const mediaQuery = window.matchMedia("(min-width: 833px)");
   const headerBox = document.querySelector("#headerBox");
-  const swiper = document.querySelector("#swiper");
+  const quickMnueBarSwiper = document.querySelector("#quickMnueBarSwiper");
 
   function handleDeviceChange(e) {
     const isDesktop = e.matches;
@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       menuButton.addEventListener("click", navigationToggleSwitch);
     }
     quickMenuSwiperActive();
+    macProductSwiperActive();
   }
   handleDeviceChange(mediaQuery);
 
@@ -126,36 +127,94 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function quickMenuSwiperActive() {
-    new Swiper(swiper, {
+    new Swiper(quickMnueBarSwiper, {
       slidesPerView: 11,
       slidesPerView: "auto",
       allowTouchMove: false,
       slidesPerGroup: 4,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: "#quickMenuBar .swiper-button-next",
+        prevEl: "#quickMenuBar .swiper-button-prev",
       },
     });
   }
 
-  const ProductMnueButtons = document.querySelectorAll(".product_menu >button");
-  const ProductMnueActiveBox = document.querySelector(".active_button_box");
+  const ProductMnueButtons = document.querySelectorAll(".product_menu>button");
 
   ProductMnueButtons.forEach((button) => {
-    button.addEventListener("click", productMenuActive);
+    button.addEventListener("click", (e) => {
+      productMenuActive(e);
+      showSwiper(e);
+    });
   });
 
   function productMenuActive(item) {
     const button = item.currentTarget;
-    const ACTIVE_BOX_MARGIN = 4;
 
     document.querySelector(".product_menu button.active")?.classList.remove("active");
     button.classList.add("active");
+
+    updateActiveButtonBox(button);
+  }
+
+  function updateActiveButtonBox(button) {
+    const ACTIVE_BOX_MARGIN = 4;
+    const ProductMnueActiveBox = document.querySelector(".active_button_box");
+    if (!ProductMnueActiveBox) return;
 
     const buttonWidth = button.offsetWidth - ACTIVE_BOX_MARGIN * 2;
     const buttonLeft = button.offsetLeft + ACTIVE_BOX_MARGIN;
 
     ProductMnueActiveBox.style.width = `${buttonWidth}px`;
     ProductMnueActiveBox.style.transform = `translateX(${buttonLeft}px)`;
+    console.log(`${buttonWidth}px`, `translateX(${buttonLeft}px)`);
+  }
+
+  function showSwiper(item) {
+    const target = item.currentTarget.dataset.target;
+    const productSwipers = document.querySelectorAll(".product_swiper_wrap .swiper");
+
+    const activeSwiper = Array.from(productSwipers).find((swiperEl) => swiperEl.dataset.swiper === target);
+
+    productSwipers.forEach((el) => el.classList.remove("active"));
+    if (activeSwiper) activeSwiper.classList.add("active");
+
+    macProductSwiperActive(activeSwiper);
+  }
+
+  let resizeTimer;
+
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+
+    resizeTimer = setTimeout(() => {
+      const activeButton = document.querySelector(".product_menu button.active");
+      if (activeButton) updateActiveButtonBox(activeButton);
+    }, 100);
+  });
+
+  function macProductSwiperActive(activeSwiper = null) {
+    const macProductSwiperAll = document.querySelector("#macProductSwiperAll");
+    const activeSwiperEl = document.querySelector(".product_swiper_wrap .swiper.active") || macProductSwiperAll;
+    const productSwipers = document.querySelectorAll(".product_swiper_wrap .swiper");
+
+    productSwipers.forEach((swiperEl) => {
+      if (swiperEl.swiper) swiperEl.swiper.destroy(true, true);
+    });
+    const swiperTarget = activeSwiper || activeSwiperEl;
+    const swiperCurrent = new Swiper(swiperTarget, {
+      slidesPerView: "auto",
+      allowTouchMove: false,
+      spaceBetween: 40,
+      breakpoints: {
+        834: {
+          spaceBetween: 20,
+        },
+      },
+      navigation: {
+        nextEl: ".product_mac_swiper_box .swiper-button-next",
+        prevEl: ".product_mac_swiper_box .swiper-button-prev",
+      },
+    });
   }
 });
