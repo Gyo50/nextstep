@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/iphone.css" />
-    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/feature/iphone/iphone.css" />
+    <link rel="icon" href="/img/favicon.ico" />
     <title>iPhone - Apple (KR)</title>
   </head>
   <body>
     <header>
       <nav>
         <a class="nav-logo" href="index.html">
-          <img src="img/logo.png" alt="애플로고" />
+          <img src="/img/logo.png" alt="애플로고" />
         </a>
         <div class="nav-menu">
           <a href="#">Mac</a>
@@ -25,18 +25,32 @@
         </div>
         <div class="nav-icon">
           <a>
-            <img src="img/search.png" alt="검색" />
+            <img src="/img/search.png" alt="검색" />
           </a>
           <a>
-            <img src="img/shopping.png" alt="쇼핑" />
+            <img src="/img/shopping.png" alt="쇼핑" />
           </a>
         </div>
       </nav>
+      <div class="dropdown-wrap">
+        <div class="dropdown-menu" data-menu="mac">Mac 메뉴 내려옴</div>
+        <div class="dropdown-menu" data-menu="ipad">iPad 메뉴 내려옴</div>
+        <div class="dropdown-menu" data-menu="iphone">
+          <div>라인업 살펴보기</div>
+          <div>보다 자세히 들여다보기</div>
+          <div>iPhone, Apple에서 사면 가장 좋은 이유</div>
+          <div>알면 알수록, iPhone</div>
+          <div>iPhone 필수품</div>
+          <div>절친 목록</div>
+        </div>
+        <div class="dropdown-menu" data-menu="watch">Watch 메뉴 내려옴</div>
+        <div class="dropdown-menu" data-menu="airpods">AirPods 메뉴 내려옴</div>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="product-container">
         <div class="iphone-title">iPhone</div>
-        <ul class="product-container">
+        <ul class="products">
           <li class="product">
             <img
               src="https://www.apple.com/kr/iphone/home/images/overview/chapternav/nav_iphone_17pro__d60uog2c064i_large_2x.png"
@@ -110,7 +124,7 @@
       <div class="footer-container">
         <div class="footer-location">
           <a href="index.html" class="location-page">
-            <img src="img/logo.png" alt="애플로고" />
+            <img src="/img/logo.png" alt="애플로고" />
           </a>
           <span class="location-page">&gt;</span>
           <span class="location-page">iPhone</span>
@@ -149,5 +163,6 @@
         </div>
       </div>
     </footer>
+    <script src="iphone.js"></script>
   </body>
 </html>
