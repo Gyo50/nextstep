@@ -121,6 +121,78 @@ footer.blur {
   padding-top: 6px;
 }
 
+/* section - 공통 타이틀 css */
+.section-title {
+  color: var(--text-color);
+  font-size: 56px;
+  font-weight: 600;
+  width: 1260px;
+  padding-bottom: 48px;
+}
+.section-bg {
+  background-color: var(--footer-bg-color);
+  padding-bottom: 48px;
+}
+
+/* section - line up */
+.lineup-container {
+  display: flex;
+  justify-content: center;
+}
+.lineup-text {
+  width: 1260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lineup-model {
+  font-size: 17px;
+  text-decoration: none;
+  color: var(--link-color);
+  white-space: nowrap;
+}
+
+/* section - detail */
+.show-detail-container {
+  display: flex;
+  justify-content: center;
+}
+.show-detail-img {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1), filter 0.6s ease;
+}
+.show-detail-img:hover {
+  transform: scale(1.01);
+}
+.show-detail-text {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--text-color);
+}
+.show-detail-text h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+.show-detail-btn {
+  background-color: #1d1d1f;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.show-detail-btn:hover {
+  background-color: #333;
+}
+
 /* footer */
 footer {
   width: 100%;
