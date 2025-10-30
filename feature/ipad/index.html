@@ -10,103 +10,293 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/common.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="index.css" />
-    <title>nextstep</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <title>AppleStore</title>
   </head>
   <body>
     <!-- 사이트 헤더 -->
     <header class="site-header">
-      <ul class="main-header menu">
-        <a href="/">
-          <li><img src="./img/common/logo-icon.svg" alt="애플 로고" /></li>
-        </a>
-        <a href="/" id="imac"><li>Mac</li></a>
-        <div>
-          <a href="/" id="ipad"><li>iPad</li></a>
-          <!-- 아이패드 메뉴바-->
-          <ul class="ipad-interaction-header">
-            <a href="#section-01"><li>iPad</li></a>
-            <a href="#"><li>알면 알수록, iPad.</li></a>
-            <a href="#"><li>라인업 살펴보기.</li></a>
-            <a href="#section-04"><li>iPad와 천생연분.</li></a>
-            <a href="#"><li>iPad, Apple에서 사면 가장 좋은 이유.</li></a>
-            <a href="#"><li>절친 목록.</li></a>
+      <!-- 첫번째 헤더 -->
+      <div>
+        <div class="main-header-contain">
+          <ul class="main-header">
+            <li>
+              <a href="/">
+                <img src="./img/common/logo-icon.svg" alt="애플 로고" />
+              </a>
+            </li>
+            <li>
+              <a href="/" id="mac">Mac</a>
+            </li>
+            <li>
+              <a href="/" id="ipad">iPad</a>
+            </li>
+            <li>
+              <a href="/" id="iphone">iPhone</a>
+            </li>
+            <li>
+              <a href="/" id="watch">Watch</a>
+            </li>
+            <li>
+              <a href="/" id="airPods">AirPods</a>
+            </li>
+            <li>
+              <a href="/" id="support">고객지원</a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./img/common/search-icon.svg" alt="검색 아이콘" />
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./img/common/shop-icon.svg" alt="쇼핑 아이콘" />
+              </a>
+            </li>
           </ul>
-          <!-- *** -->
         </div>
-        <a href="/"><li>iPhone</li></a>
-        <a href="/"><li>Watch</li></a>
-        <a href="/"><li>AirPods</li></a>
-        <a href="/"><li>고객지원</li></a>
-        <a href="/">
-          <li><img src="./img/common/search-icon.svg" alt="검색 아이콘" /></li>
-        </a>
-        <a href="/">
-          <li><img src="./img/common/shop-icon.svg" alt="쇼핑 아이콘" /></li>
-        </a>
-      </ul>
+      </div>
 
+      <!-- 첫번째 헤더 메뉴바-->
+      <div class="interaction-menu">
+        <div class="mac">
+          <ul>
+            <li>Mac 살펴보기</li>
+            <li>
+              <a href="#">Mac</a>
+            </li>
+            <li>
+              <a href="#">알면 알수록, iPad.</a>
+            </li>
+            <li>
+              <a href="#">라인업 살펴보기.</a>
+            </li>
+            <li>
+              <a href="#">iPad와 천생연분.</a>
+            </li>
+            <li>
+              <a href="#">iPad, Apple에서 사면 가장 좋은 이유.</a>
+            </li>
+            <li>
+              <a href="#">절친 목록.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="ipad">
+          <ul>
+            <li>iPad 살펴보기</li>
+            <li>
+              <a href="#">iPad</a>
+            </li>
+            <li>
+              <a href="#">알면 알수록, iPad.</a>
+            </li>
+            <li>
+              <a href="#">라인업 살펴보기.</a>
+            </li>
+            <li>
+              <a href="#">iPad와 천생연분.</a>
+            </li>
+            <li>
+              <a href="#">iPad, Apple에서 사면 가장 좋은 이유.</a>
+            </li>
+            <li>
+              <a href="#">절친 목록.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="iphone">
+          <ul>
+            <li>iPhone 살펴보기</li>
+            <li>
+              <a href="#">iPhone</a>
+            </li>
+            <li>
+              <a href="#">알면 알수록, iPad.</a>
+            </li>
+            <li>
+              <a href="#">라인업 살펴보기.</a>
+            </li>
+            <li>
+              <a href="#">iPad와 천생연분.</a>
+            </li>
+            <li>
+              <a href="#">iPad, Apple에서 사면 가장 좋은 이유.</a>
+            </li>
+            <li>
+              <a href="#">절친 목록.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="watch">
+          <ul>
+            <li>Watch 살펴보기</li>
+            <li>
+              <a href="#">Watch</a>
+            </li>
+            <li>
+              <a href="#">알면 알수록, iPad.</a>
+            </li>
+            <li>
+              <a href="#">라인업 살펴보기.</a>
+            </li>
+            <li>
+              <a href="#">iPad와 천생연분.</a>
+            </li>
+            <li>
+              <a href="#">iPad, Apple에서 사면 가장 좋은 이유.</a>
+            </li>
+            <li>
+              <a href="#">절친 목록.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="airPods">
+          <ul>
+            <li>AirPods 살펴보기</li>
+            <li>
+              <a href="#">AirPods</a>
+            </li>
+            <li>
+              <a href="#">알면 알수록, iPad.</a>
+            </li>
+            <li>
+              <a href="#">라인업 살펴보기.</a>
+            </li>
+            <li>
+              <a href="#">iPad와 천생연분.</a>
+            </li>
+            <li>
+              <a href="#">iPad, Apple에서 사면 가장 좋은 이유.</a>
+            </li>
+            <li>
+              <a href="#">절친 목록.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="support">
+          <ul>
+            <li>고객지원</li>
+            <li>
+              <a href="#">고객지원</a>
+            </li>
+            <li>
+              <a href="#">알면 알수록, iPad.</a>
+            </li>
+            <li>
+              <a href="#">라인업 살펴보기.</a>
+            </li>
+            <li>
+              <a href="#">iPad와 천생연분.</a>
+            </li>
+            <li>
+              <a href="#">iPad, Apple에서 사면 가장 좋은 이유.</a>
+            </li>
+            <li>
+              <a href="#">절친 목록.</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 두번째 헤더 -->
       <div class="sub-header">
-        <a href="/">
-          <img src="./img/sub-header/ipad-L-icon.svg" alt="아이패드 프로" />
-          <p>iPad Pro</p>
-        </a>
-        <a href="/">
-          <img src="./img/sub-header/ipad-L-icon.svg" alt="아이패드 에어" />
-          <p>iPad Air</p>
-        </a>
-        <a href="/">
-          <img src="./img/sub-header/ipad-M-icon.svg" alt="아이패드 에어" />
-          <p>iPad</p>
-        </a>
-        <a href="/">
-          <img src="./img/sub-header/ipad-S-icon.svg" alt="아이패드" />
-          <p>iPad mini</p>
-        </a>
-        <a href="/">
-          <img
-            src="./img/sub-header/ipad-compare-icon.svg"
-            alt="아이패드 비교하기"
-          />
-          <p>비교하기</p>
-        </a>
-        <a href="/">
-          <img
-            src="./img/sub-header/ipad-apple-pencil-icon.svg"
-            alt="아이패드 애플펜슬"
-          />
-          <p>Apple Pencil</p>
-        </a>
-        <a href="/">
-          <img
-            src="./img/sub-header/ipad-keyboard-icon.svg"
-            alt="아이패드 키보드"
-          />
-          <p>키보드</p>
-        </a>
-        <a href="/">
-          <img
-            src="./img/sub-header/ipad-accessories-icon.svg"
-            alt="아이패드 액세서리"
-          />
-          <p>엑세서리</p>
-        </a>
-        <a href="/">
-          <img src="./img/sub-header/ipados-icon.svg" alt="아이패드OS 26" />
-          <p>iPadOS 26</p>
-        </a>
-        <a href="/">
-          <img
-            src="./img/sub-header/ipad-shop-icon.svg"
-            alt="아이패드 쇼핑하기"
-          />
-          <p>iPad 쇼핑하기</p>
-        </a>
+        <ul>
+          <li>
+            <a href="/">
+              <img src="./img/sub-header/ipad-L-icon.svg" alt="아이패드 프로" />
+              <p>iPad Pro</p>
+              <p class="newItem">new</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="./img/sub-header/ipad-L-icon.svg" alt="아이패드 에어" />
+              <p>iPad Air</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="./img/sub-header/ipad-M-icon.svg" alt="아이패드 에어" />
+              <p>iPad</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="./img/sub-header/ipad-S-icon.svg" alt="아이패드" />
+              <p>iPad mini</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="./img/sub-header/ipad-compare-icon.svg"
+                alt="아이패드 비교하기"
+              />
+              <p>비교하기</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="./img/sub-header/ipad-apple-pencil-icon.svg"
+                alt="아이패드 애플펜슬"
+              />
+              <p>Apple Pencil</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="./img/sub-header/ipad-keyboard-icon.svg"
+                alt="아이패드 키보드"
+              />
+              <p>키보드</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="./img/sub-header/ipad-accessories-icon.svg"
+                alt="아이패드 액세서리"
+              />
+              <p>엑세서리</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="./img/sub-header/ipados-icon.svg" alt="아이패드OS 26" />
+              <p>iPadOS 26</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                src="./img/sub-header/ipad-shop-icon.svg"
+                alt="아이패드 쇼핑하기"
+              />
+              <p>iPad 쇼핑하기</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 세번째 헤더 -->
+      <div class="third-header">
+        <div class="info-line">
+          교육 할인가로 iPad 구입하기.
+          <a href="#" class="deco">*</a>
+          <a href="/" class="shop-link">쇼핑하기 ></a>
+        </div>
       </div>
     </header>
 
     <!-- 사이트 메인 -->
-
     <main class="site-main">
       <!-- section-01 -->
       <div class="bg-wrapper section-01">
@@ -129,8 +319,6 @@
         </section>
       </div>
 
-      <!-- *** -->
-
       <!-- section-02 -->
       <div class="bg-wrapper">
         <section class="main-section-02">
@@ -142,7 +330,6 @@
           </div>
         </section>
       </div>
-      <!-- *** -->
 
       <!-- section-03 -->
       <div class="bg-wrapper section-03">
@@ -152,7 +339,6 @@
           </div>
         </section>
       </div>
-      <!-- *** -->
 
       <!-- section-04 -->
       <div class="bg-wrapper">
@@ -162,7 +348,6 @@
           </div>
         </section>
       </div>
-      <!-- *** -->
 
       <!-- section-05 -->
       <div class="bg-wrapper">
@@ -172,7 +357,6 @@
           </div>
         </section>
       </div>
-      <!-- *** -->
     </main>
 
     <!-- 사이트 풋터 -->
@@ -186,7 +370,7 @@
         <a href="/"><p>고객지원</p></a>
       </footer>
     </div>
-
+    <div class="blur-bg"></div>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
