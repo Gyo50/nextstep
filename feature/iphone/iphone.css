@@ -31,21 +31,12 @@ nav {
   align-items: center;
   gap: 25px;
 }
-/* .dropdown-menu {
-  width: 100%;
-  height: 50px;
-  background-color: #fafafc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-} */
 .dropdown-wrap {
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  pointer-events: none; /* 처음엔 클릭 안 되게 */
+  pointer-events: none;
 }
 
 .dropdown-menu {
@@ -56,9 +47,9 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  position: absolute; /* ↓ 이게 중요함 */
+  position: absolute;
   left: 0;
-  z-index: 1000; /* 다른 요소 위에 나오도록 */
+  z-index: 1000;
 
   visibility: hidden;
   opacity: 0;
@@ -90,6 +81,9 @@ footer.blur {
   font-size: 80px;
   color: var(--text-color);
   font-weight: 600;
+  width: 1260px;
+  display: flex;
+  justify-content: center;
 }
 .products {
   padding: 56px 0;
