@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btnImg.alt = "play";
     }
     
-    if (video && !video.paused) {
-         video.play().catch(e => console.error("Video Autoplay Failed:", e));
-    }
 
 
     function toggleVideoPlayPause() {
