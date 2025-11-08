@@ -1,13 +1,147 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <title>nextstep</title>
-  </head>
+</head>
+<body>
+<header id="header">
+    <div class="header_box" id="headerBox">
+        <h1 class="logo_box">
+            <a href="#;"><span class="blind">로고</span></a>
+        </h1>
+        <nav class="gnb">
+            <div class="gnb_box" id="navigationBox">
+                <ul class="gnb_list">
+                    <li>
+                        <a href="/feature/mac/index.html">Mac</a>
+                        <ul class="gnb_sub_list">
+                            <li><a href="#;">Mac 모두 살펴보기</a></li>
+                            <li><a href="#;">MacBook Air</a></li>
+                            <li><a href="#;">MacBook Pro</a></li>
+                            <li><a href="#;">iMac</a></li>
+                            <li><a href="#;">Mac mini</a></li>
+                            <li><a href="#;">Mac Studio</a></li>
+                            <li><a href="#;">Mac Pro</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/feature/ipad/index.html">iPad</a>
+                        <ul class="gnb_sub_list">
+                            <li><a href="#;">iPad 1</a></li>
+                            <li><a href="#;">iPad 2</a></li>
+                            <li><a href="#;">iPad 3</a></li>
+                            <li><a href="#;">iPad 4</a></li>
+                            <li><a href="#;">iPad 5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/feature/iphone/index.html">iphone</a>
+                        <ul class="gnb_sub_list">
+                            <li><a href="#;">iPad 모두 살펴보기</a></li>
+                            <li><a href="#;">iPad Pro</a></li>
+                            <li><a href="#;">iPad Air</a></li>
+                            <li><a href="#;">iPad</a></li>
+                            <li><a href="#;">iPad mini</a></li>
+                            <li><a href="#;">Apple Pencil</a></li>
+                            <li><a href="#;">키보드</a></li>
+                            <li><a href="#;">iPad 비교하기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#;">watch</a>
+                        <ul class="gnb_sub_list">
+                            <li><a href="#;">Apple Watch 모두 살펴보기</a></li>
+                            <li><a href="#;">Apple Watch Series 11</a></li>
+                            <li><a href="#;">Apple Watch SE 3</a></li>
+                            <li><a href="#;">Apple Watch Ultra 3</a></li>
+                            <li><a href="#;">Apple Watch Nike</a></li>
+                            <li><a href="#;">Apple Watch Hermes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/feature/airpods/index.html">Airpods</a>
+                        <ul class="gnb_sub_list">
+                            <li><a href="#;">AirPods 모두 살펴보기</a></li>
+                            <li><a href="#;">AirPods 4</a></li>
+                            <li><a href="#;">AirPods Pro 3</a></li>
+                            <li><a href="#;">AirPods Max</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#;">고객지원</a>
+                        <ul class="gnb_sub_list">
+                            <li><a href="#;">고객지원 1</a></li>
+                            <li><a href="#;">고객지원 2</a></li>
+                            <li><a href="#;">고객지원 3</a></li>
+                            <li><a href="#;">고객지원 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+            <div class="util_box">
+                <a href="#;" class="search"><span class="blind">검색하기</span></a>
+                <a href="#;" class="itembox"><span class="blind">장바구니 가기</span></a>
+                <button type="button" class="menu" id="menuButton"><span class="blind">네비게이션 메뉴 열기</span></button>
+            </div>
+        </div>
+    </header>
 
-  <body></body>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-location">
+          <a href="index.html" class="location-page">
+            <img src="img/logo.svg" alt="애플로고" />
+          </a>
+          <!-- <span class="location-page">&gt;</span>
+          <span class="location-page">iPhone</span>**/ -->
+        </div>
+        <div class="footer-support">
+          <div class="support-client">쇼핑 및 고객지원</div>
+          <div class="support-color support-client-list">
+            <a href="#">Mac</a>
+            <a href="#">iPad</a>
+            <a href="#">iPhone</a>
+            <a href="#">Watch</a>
+            <a href="#">AirPods</a>
+            <a href="#">고객지원</a>
+          </div>
+          <div class="support-color support-client-help">
+            다양한 쇼핑 방법 :
+            <a href="#">Apple Store를 방문</a>하거나, <a href="#">리셀러</a>를
+            찾아보거나, <a href="#">080-330-8877</a>
+          </div>
+        </div>
+        <div class="footer-copy">
+          <div class="copy-container">
+            <div>Copyright © 2025 Apple Inc. 모든 권리 보유.</div>
+            <div>
+              개인정보 방침 | 웹 사이트 이용 약관 | 판매 및 환불 | 법적 고지 |
+              사이트 맵
+            </div>
+          </div>
+          <p>
+            애플코리아 유한회사 | 대표이사: Mark Lee(마크리) | 주소: 서울특별시
+            강남구 영동대로 517 | 전화: 080-333-4000 |
+            https://support.apple.com/ko-kr | 사업자등록번호: 120-81-84429 |<br />
+            통신판매업신고번호: 제2011-서울강남-00810호 | 호스팅 서비스 제공:
+            Apple Inc. | 사업자정보
+          </p>
+        </div>
+      </div>
+    </footer>
+</body>
 </html>

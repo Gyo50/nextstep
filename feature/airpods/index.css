@@ -302,22 +302,28 @@ nav {
 
 /* main */
 
-.airpods-video {
+.video {
     overflow: hidden;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 15px;
 }
 
-.airpods-video .airpods-wrapper {
+.video .wrapper {
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 15px 30px 15px;
     position: relative;
     max-width: 1580px;
     box-sizing: border-box;
 }
 
-.airpods-video .wrapper-flex {
+.video .airpodsMax-wrapper{
+    height: 756px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.video .wrapper-flex {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -325,7 +331,20 @@ nav {
     justify-content: center;
 }
 
-.airpods-video .airpods-text {
+.video .airpodsMax-flex{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 18px;
+    background-image: url(./img/airpods_max_logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.video .airpods-text,
+.video .dance-text {
     position: absolute;
     bottom: 0;
     z-index: 2;
@@ -343,22 +362,38 @@ nav {
     font-weight: 600;
 }
 
-.airpods-text .product .tx1 {
+.dance-text .product {
+    text-align: left;
+    margin-left: 48px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.airpods-text .product .tx1,
+.dance-text .product .tx1 {
     font-size: 80px;
     height: 92px;
 }
 
-.airpods-text .product .tx2 {
+.airpods-text .product .tx2,
+.dance-text .product .tx2 {
     font-size: 24px;
     margin: 7px 0 15px;
     font-size: 21px;
 }
-
-.airpods-text .product .tx3 {
+.airpods-text .product .flex-tx,
+.dance-text .product .flex-tx {
+    display: flex;
+    gap: 20px;
+}
+.airpods-text .product .tx3,
+.dance-text .product .tx3 {
     font-size: 17px;
+    font-weight: 400;
 }
 
-.airpods-text .product-link {
+.airpods-text .product-link,
+.dance-text .dance-product-link {
     margin-right: 48px;
     display: flex;
     gap: 14px;
@@ -376,10 +411,28 @@ nav {
     color: #ffffff;
 }
 
+.dance-product-link a{
+    font-size: 14px;
+    line-height: 1.2857742857;
+    font-weight: 400;
+    background-color: #ffffff;
+    border-radius: 980px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding-inline: 15px;
+    padding-block: 8px;
+    color: #000000;
+}
+
 .product-link .tx2 {
     padding: 8px 15px;
     background-color: #ffffff;
     color: var(--link-color);
+}
+
+.dance-product-link .tx2 {
+    padding: 8px 15px;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 .product-link .tx2:hover {
@@ -387,14 +440,106 @@ nav {
     color: #ffffff;
 }
 
+.dance-product-link .tx2:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
 
-.airpods-video .video {
+.video .airpods-video,
+.video .dance-video {
     width: 100%;
     border-radius: 18px;
+    position: relative;
+    z-index: 1; 
+}
+
+.airpodsMax{
+    width: 100%;
+}
+
+.video-btn,
+.airpodsMax-btn {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 3;
+    overflow: hidden;
+    text-align: left;
+}
+
+.video-btn .btn,
+.airpodsMax-btn .airMax {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto;
+    background: rgb(210, 210, 215, 0.64);
+}
+
+.video-btn .btn-img,
+.airMax-btn .airMax-img{
+    width: 35px;
+    height: 35px;
+    opacity: 0.6;
+}
+
+/* find */
+.find{
+    padding: 100px 0 150px 0;
+}
+
+.find-wrapper {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.find-wrapper .title h2 {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.171875;
+    color: #1d1d1f;
+}
+
+.find .icon-gropu {
+    max-width: 940px;
+    margin-top: 51px;
+    margin-left: auto;
+    margin-right: auto;
+        display: grid;
+    color: #1d1d1f;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-row-gap: 53px;
+    grid-column-gap: 34px;
+}
+
+.icon-gropu .icon-item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    margin-bottom: 2px;
+    border-bottom: 1px solid #d2d2d7;
 }
 
 
-/* sec1 */
+
+
+
+
+
+
+
+
+
 
 
 /* footer */
