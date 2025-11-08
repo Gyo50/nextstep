@@ -14,11 +14,10 @@
 
     /*diagram color*/
     --diagram-color:rgba(0, 0, 0, 0.48);
-    --diagram-text-color: :rgba(0, 0, 0, 0.72);   
+    --diagram-text-color: :rgba(0, 0, 0, 0.72);
+
+    /*text color*/
+    --text-color: #1d1d1f;
+    
+    
 }
-
-
-
-
-
-
