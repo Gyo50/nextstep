@@ -1,0 +1,23 @@
+:root {
+  --font-color-base: #1d1d1f;
+  --font-color-footer: #0000008f;
+}
+
+.color_link {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+body {
+  font-size: 13px;
+  transition: all 0.3s;
+  color: #1d1d1f;
+  line-height: normal;
+}
+
+/* 데스크탑 영역 */
+@media screen and (min-width: 833px) {
+  body {
+    font-size: 16px;
+  }
+}

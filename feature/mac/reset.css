@@ -1,0 +1,14 @@
+
+*{
+  box-sizing:border-box;
+}
+
+button{
+  display:inline-block;
+  all:unset;
+  cursor:pointer;
+}
+
+a{
+  text-decoration:none;
+}

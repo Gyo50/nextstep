@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="content.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="ui.js"></script>
+    <!-- <script src="ui-refectoring.js"></script> -->
+    <title>nextstep</title>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="header_box" id="headerBox">
+          <h1 class="logo_box">
+            <a href="#;"><span class="blind">로고</span></a>
+          </h1>
+          <nav class="gnb">
+            <div class="gnb_box" id="navigationBox">
+              <ul class="gnb_list">
+                <li>
+                  <a href="#;">Mac</a>
+                  <ul class="gnb_sub_list">
+                    <li><a href="#;">Mac 모두 살펴보기</a></li>
+                    <li><a href="#;">MacBook Air</a></li>
+                    <li><a href="#;">MacBook Pro</a></li>
+                    <li><a href="#;">iMac</a></li>
+                    <li><a href="#;">Mac mini</a></li>
+                    <li><a href="#;">Mac Studio</a></li>
+                    <li><a href="#;">Mac Pro</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#;">iPad</a>
+                  <ul class="gnb_sub_list">
+                    <li><a href="#;">iPad 1</a></li>
+                    <li><a href="#;">iPad 2</a></li>
+                    <li><a href="#;">iPad 3</a></li>
+                    <li><a href="#;">iPad 4</a></li>
+                    <li><a href="#;">iPad 5</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#;">iphone</a>
+                  <ul class="gnb_sub_list">
+                    <li><a href="#;">iPad 모두 살펴보기</a></li>
+                    <li><a href="#;">iPad Pro</a></li>
+                    <li><a href="#;">iPad Air</a></li>
+                    <li><a href="#;">iPad</a></li>
+                    <li><a href="#;">iPad mini</a></li>
+                    <li><a href="#;">Apple Pencil</a></li>
+                    <li><a href="#;">키보드</a></li>
+                    <li><a href="#;">iPad 비교하기</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#;">watch</a>
+                  <ul class="gnb_sub_list">
+                    <li><a href="#;">Apple Watch 모두 살펴보기</a></li>
+                    <li><a href="#;">Apple Watch Series 11</a></li>
+                    <li><a href="#;">Apple Watch SE 3</a></li>
+                    <li><a href="#;">Apple Watch Ultra 3</a></li>
+                    <li><a href="#;">Apple Watch Nike</a></li>
+                    <li><a href="#;">Apple Watch Hermes</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#;">Airpods</a>
+                  <ul class="gnb_sub_list">
+                    <li><a href="#;">AirPods 모두 살펴보기</a></li>
+                    <li><a href="#;">AirPods 4</a></li>
+                    <li><a href="#;">AirPods Pro 3</a></li>
+                    <li><a href="#;">AirPods Max</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#;">고객지원</a>
+                  <ul class="gnb_sub_list">
+                    <li><a href="#;">고객지원 1</a></li>
+                    <li><a href="#;">고객지원 2</a></li>
+                    <li><a href="#;">고객지원 3</a></li>
+                    <li><a href="#;">고객지원 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="util_box">
+            <a href="#;" class="search"><span class="blind">검색하기</span></a>
+            <a href="#;" class="itembox"><span class="blind">장바구니 가기</span></a>
+            <button type="button" class="menu" id="menuButton"><span class="blind">네비게이션 메뉴 열기</span></button>
+          </div>
+        </div>
+      </header>
+      <div id="quickMenuBar">
+        <div class="swiper" id="quickMnueBarSwiper">
+          <div class="swiper-wrapper">
+            <a href="#;" class="swiper-slide">MacBook Air</a>
+            <a href="#;" class="swiper-slide">MacBook Pro</a>
+            <a href="#;" class="swiper-slide">iMac</a>
+            <a href="#;" class="swiper-slide">Mac mini</a>
+            <a href="#;" class="swiper-slide">Mac Studio</a>
+            <a href="#;" class="swiper-slide">Mac Pro</a>
+            <a href="#;" class="swiper-slide">비교하기</a>
+            <a href="#;" class="swiper-slide">디스플레이</a>
+            <a href="#;" class="swiper-slide">엑세서리</a>
+            <a href="#;" class="swiper-slide">Tahoe</a>
+            <a href="#;" class="swiper-slide">Mac 쇼핑하기</a>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="quick_shopping">
+        <p class="quick_text">
+          교육 할인가로 Mac 구입하기
+          <a href="#;">쇼핑하기</a>
+        </p>
+      </div>
+
+      <div id="content">
+        <section>
+          <h2 class="title large">Mac</h2>
+          <div class="product_menu_box">
+            <div class="product_menu">
+              <button type="button" class="active" data-target="all">모든 제품</button>
+              <button type="button" data-target="notebook">노트북</button>
+              <button type="button" data-target="desktop">데스크탑</button>
+              <button type="button" data-target="display">디스플레이</button>
+              <span class="active_button_box"></span>
+            </div>
+          </div>
+          <div class="product_swiper_wrap">
+            <div class="swiper product_mac_swiper_box active" id="macProductSwiperAll" data-swiper="all">
+              <div class="product_mac_swiper swiper-wrapper">
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_notebook01.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <div class="product_color">
+                      <span class="skyblue"><span class="blind">스카이블루</span></span>
+                      <span class="silver"><span class="blind">실버</span></span>
+                      <span class="starright"><span class="blind">스타라이트</span></span>
+                      <span class="midnight"><span class="blind">미드나이트</span></span>
+                    </div>
+                    <h3 class="model_name">MacBook Air 13 및 15</h3>
+                    <b class="model_spec">m4 칩</b>
+                    <p class="comment">어디서든 일하고, 즐기고, 창작할 수 있도록 해주는 놀랍도록 얇고 빠른 노트북.</p>
+                    <strong class="price">₩1,590,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_notebook02.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <div class="product_color">
+                      <span class="silver"><span class="blind">실버</span></span>
+                      <span class="midnight"><span class="blind">미드나이트</span></span>
+                    </div>
+                    <h3 class="model_name">MacBook Pro 14 및 16</h3>
+                    <b class="model_spec">M5, M4 Pro 또는 M4 Max 칩</b>
+                    <p class="comment">
+                      막대한 워크플로도 너끈히 처리하는
+                      <br />
+                      가장 앞선 Mac 노트북.
+                    </p>
+                    <strong class="price">₩2,390,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_desktop01.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <div class="product_color">
+                      <span class="skyblue"><span class="blind">스카이블루</span></span>
+                      <span class="silver"><span class="blind">실버</span></span>
+                      <span class="starright"><span class="blind">스타라이트</span></span>
+                      <span class="midnight"><span class="blind">미드나이트</span></span>
+                    </div>
+                    <h3 class="model_name">iMac</h3>
+                    <b class="model_spec">m4 칩</b>
+                    <p class="comment">
+                      창의적인 작업도 생산적 업무도 척척.
+                      <br />
+                      놀라운 올인원 데스크탑.
+                    </p>
+                    <strong class="price">₩1,990,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_desktop02.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <h3 class="model_name">Mac mini</h3>
+                    <b class="model_spec">M4 또는 M4 Pro 칩</b>
+                    <p class="comment">
+                      막강한 성능을 선사하는
+                      <br />
+                      가장 작고 부담 없는 Mac.
+                    </p>
+                    <strong class="price">₩890,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_desktop03.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <h3 class="model_name">Mac Studio</h3>
+                    <b class="model_spec">M4 Max 또는 M3 Ultra 칩</b>
+                    <p class="comment">
+                      전문 워크플로를 위한
+                      <br />
+                      강력한 성능 및 빈틈없는 연결성.
+                    </p>
+                    <strong class="price">₩3,290,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_desktop04.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <h3 class="model_name">Mac Pro</h3>
+                    <b class="model_spec">M2 Ultra 칩</b>
+                    <p class="comment">
+                      PCIe 확장으로 막대한 워크플로도
+                      <br />
+                      너끈히 처리할 수 있는 전문가용 워크스테이션.
+                    </p>
+                    <strong class="price">₩10,490,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_display01.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <h3 class="model_name">Studio Display</h3>
+                    <p class="comment">
+                      뛰어난 카메라와 오디오를 갖춘
+                      <br />
+                      5K Retina 디스플레이.
+                    </p>
+                    <strong class="price">₩2,090,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_display02.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <h3 class="model_name">Pro Display XDR</h3>
+                    <p class="comment">
+                      프로 워크플로에 적합한
+                      <br />
+                      첨단 6K XDR 디스플레이.
+                    </p>
+                    <strong class="price">₩6,499,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide_button_box">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="swiper product_mac_swiper_box" id="macProductSwiperNotebook" data-swiper="notebook">
+              <div class="product_mac_swiper swiper-wrapper">
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_notebook01.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <div class="product_color">
+                      <span class="skyblue"><span class="blind">스카이블루</span></span>
+                      <span class="silver"><span class="blind">실버</span></span>
+                      <span class="starright"><span class="blind">스타라이트</span></span>
+                      <span class="midnight"><span class="blind">미드나이트</span></span>
+                    </div>
+                    <h3 class="model_name">MacBook Air 13 및 15</h3>
+                    <b class="model_spec">m4 칩</b>
+                    <p class="comment">어디서든 일하고, 즐기고, 창작할 수 있도록 해주는 놀랍도록 얇고 빠른 노트북.</p>
+                    <strong class="price">₩1,590,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_notebook02.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <div class="product_color">
+                      <span class="silver"><span class="blind">실버</span></span>
+                      <span class="midnight"><span class="blind">미드나이트</span></span>
+                    </div>
+                    <h3 class="model_name">MacBook Pro 14 및 16</h3>
+                    <b class="model_spec">M5, M4 Pro 또는 M4 Max 칩</b>
+                    <p class="comment">
+                      막대한 워크플로도 너끈히 처리하는
+                      <br />
+                      가장 앞선 Mac 노트북.
+                    </p>
+                    <strong class="price">₩2,390,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide_button_box">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="swiper product_mac_swiper_box" id="macProductSwiperDesktop" data-swiper="desktop">
+              <div class="product_mac_swiper swiper-wrapper">
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_desktop01.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <div class="product_color">
+                      <span class="skyblue"><span class="blind">스카이블루</span></span>
+                      <span class="silver"><span class="blind">실버</span></span>
+                      <span class="starright"><span class="blind">스타라이트</span></span>
+                      <span class="midnight"><span class="blind">미드나이트</span></span>
+                    </div>
+                    <h3 class="model_name">iMac</h3>
+                    <b class="model_spec">m4 칩</b>
+                    <p class="comment">
+                      창의적인 작업도 생산적 업무도 척척.
+                      <br />
+                      놀라운 올인원 데스크탑.
+                    </p>
+                    <strong class="price">₩1,990,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_desktop02.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <h3 class="model_name">Mac mini</h3>
+                    <b class="model_spec">M4 또는 M4 Pro 칩</b>
+                    <p class="comment">
+                      막강한 성능을 선사하는
+                      <br />
+                      가장 작고 부담 없는 Mac.
+                    </p>
+                    <strong class="price">₩890,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_desktop03.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <h3 class="model_name">Mac Studio</h3>
+                    <b class="model_spec">M4 Max 또는 M3 Ultra 칩</b>
+                    <p class="comment">
+                      전문 워크플로를 위한
+                      <br />
+                      강력한 성능 및 빈틈없는 연결성.
+                    </p>
+                    <strong class="price">₩3,290,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_desktop04.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <h3 class="model_name">Mac Pro</h3>
+                    <b class="model_spec">M2 Ultra 칩</b>
+                    <p class="comment">
+                      PCIe 확장으로 막대한 워크플로도
+                      <br />
+                      너끈히 처리할 수 있는 전문가용 워크스테이션.
+                    </p>
+                    <strong class="price">₩10,490,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide_button_box">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="swiper product_mac_swiper_box" id="macProductSwiperDisplay" data-swiper="display">
+              <div class="product_mac_swiper swiper-wrapper">
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_display01.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <h3 class="model_name">Studio Display</h3>
+                    <p class="comment">
+                      뛰어난 카메라와 오디오를 갖춘
+                      <br />
+                      5K Retina 디스플레이.
+                    </p>
+                    <strong class="price">₩2,090,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+                <div class="product_swiper_item swiper-slide">
+                  <a href="#;" class="item_img">
+                    <img src="img/img_product_display02.jpg" alt="" />
+                  </a>
+                  <div class="product_detaile">
+                    <h3 class="model_name">Pro Display XDR</h3>
+                    <p class="comment">
+                      프로 워크플로에 적합한
+                      <br />
+                      첨단 6K XDR 디스플레이.
+                    </p>
+                    <strong class="price">₩6,499,000부터</strong>
+                  </div>
+                  <div class="btn_box">
+                    <a href="#;" class="button_more">더 알아보기</a>
+                    <a href="#;" class="button_buy">구입하기</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide_button_box">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="title">
+            Mac, Apple에서 사면
+            <br />
+            가장 좋은 이유.
+          </h2>
+        </section>
+        <section>
+          <h2 class="title">알면 알수록, Mac.</h2>
+        </section>
+        <section>
+          <h2 class="title">Mac으로 갈아타기.</h2>
+        </section>
+        <section>
+          <h2 class="title">Mac과 천생연분.</h2>
+        </section>
+        <section>
+          <h2 class="title">함께 여는 Apple의 세계.</h2>
+        </section>
+      </div>
+
+      <footer>
+        <div class="footer_box">
+          <ul class="location">
+            <li>
+              <a href="#;"><span class="blind">홈으로 이동</span></a>
+            </li>
+            <li>Apple Store 온라인</li>
+          </ul>
+          <div class="footer_gnb">
+            <ul class="nav_list">
+              <li><a href="#;">Mac</a></li>
+              <li><a href="#;">iPad</a></li>
+              <li><a href="#;">iPhone</a></li>
+              <li><a href="#;">Watch</a></li>
+              <li><a href="#;">Airpods</a></li>
+              <li><a href="#;">고객지원</a></li>
+            </ul>
+          </div>
+          <p class="comment">
+            다양한 쇼핑 방법 :
+            <a href="#;" class="color_link">Apple Store</a>
+            를 방문하거나,
+            <a href="#;" class="color_link">리셀러</a>
+            를 찾아보거나,
+            <a href="#;" class="color_link">080-330-8877</a>
+            번으로 전화하세요.
+          </p>
+          <div class="footer_infomation">
+            <p class="copyright">Copyright © 2025 Apple Inc. 모든 권리 보유.</p>
+            <ul class="link_wrap">
+              <li><a href="#;">개인정보 방침</a></li>
+              <li><a href="#;">웹 사이트 이용 약관</a></li>
+              <li><a href="#;">판매 및 환불</a></li>
+              <li><a href="#;">법적 고지</a></li>
+              <li><a href="#;">사이트 맵</a></li>
+            </ul>
+          </div>
+          <div class="footer_info_detail">
+            <span>애플코리아 유한회사</span>
+            <span>대표이사: Mark Lee(마크리)</span>
+            <span>주소: 서울특별시 강남구 영동대로 517</span>
+            <span>전화: 080-333-4000</span>
+            <span>https://support.apple.com/ko-kr</span>
+            <span>사업자등록번호: 120-81-84429</span>
+            <span>통신판매업신고번호: 제2011-서울강남-00810호</span>
+            <span>호스팅 서비스 제공: Apple Inc.</span>
+            <span>사업자정보</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
