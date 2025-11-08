@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mediaQuery = window.matchMedia("(min-width: 833px)");
   const headerBox = document.querySelector("#headerBox");
   const quickMnueBarSwiper = document.querySelector("#quickMnueBarSwiper");
+  const logobox = document.querySelector(".logo_box");
 
   function handleDeviceChange(e) {
     const isDesktop = e.matches;
@@ -18,12 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
       menuButton.removeEventListener("click", navigationToggleSwitch);
       navItems.forEach((item) => item.addEventListener("mouseover", mouseOverHandler));
       headerBox.addEventListener("mouseleave", mouseLeaveHandler);
+      logobox.style.paddingLeft = '0px';
     } else {
       // 모바일 영역
       console.log("모바일");
       navItems.forEach((item) => item.removeEventListener("mouseover", mouseOverHandler));
       headerBox.removeEventListener("mouseleave", mouseLeaveHandler);
       menuButton.addEventListener("click", navigationToggleSwitch);
+      logobox.style.paddingLeft = '22px';
     }
     quickMenuSwiperActive();
     macProductSwiperActive();

@@ -47,15 +47,17 @@ a{
   display: flex;
   justify-content: space-between;
 }
-.header_box .logo_box > a {
+/* .header_box .logo_box > a {
   position: relative;
   display: block;
   width: 49px;
   height: 48px;
   background: url("img/logo.svg") no-repeat center / contain;
   z-index: 1;
+} */
+.header_box .logo_box a{
+  font-size: 0;
 }
-
 .gnb {
   position: relative;
 }
@@ -220,9 +222,9 @@ a{
     padding: 0 22px;
     align-items: center;
   }
-  .header_box .logo_box > a {
+  /* .header_box .logo_box > \ {
     height: 44px;
-  }
+  } */
   .gnb {
     width: 100%;
     position: static;
