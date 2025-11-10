@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
 
-
+    
     function toggleVideoPlayPause() {
         if (!video) return;
-
+        
         if (video.paused) {
-            video.play(); 
+            video.play();
             btnImg.src = "./img/pause.svg";
             btnImg.alt = "pause";
         } else {
