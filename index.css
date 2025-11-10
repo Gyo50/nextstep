@@ -55,6 +55,10 @@ a{
   background: url("img/logo.svg") no-repeat center / contain;
   z-index: 1;
 } */
+
+.header_box .logo_box{
+  z-index: 10;
+}
 .header_box .logo_box a{
   font-size: 0;
 }
